@@ -7,6 +7,8 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		66342DAB0F92B60A8F2087F8 /* Pods_TinderSwipeCardsSwift.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A6F904991F9C8ECF5535A3AD /* Pods_TinderSwipeCardsSwift.framework */; };
+		A7FA65874A5514AFDF674548 /* Pods_TinderSwipeCardsSwiftTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C712C95CC91146354012CC9B /* Pods_TinderSwipeCardsSwiftTests.framework */; };
 		CC2D002B1AF1D31400AF5C5F /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = CC2D002A1AF1D31400AF5C5F /* AppDelegate.swift */; };
 		CC2D002D1AF1D31400AF5C5F /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CC2D002C1AF1D31400AF5C5F /* ViewController.swift */; };
 		CC2D00301AF1D31400AF5C5F /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = CC2D002E1AF1D31400AF5C5F /* Main.storyboard */; };
@@ -29,6 +31,12 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		1650F87B1FAE5E02ECE2C27B /* Pods-TinderSwipeCardsSwiftTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-TinderSwipeCardsSwiftTests.release.xcconfig"; path = "Pods/Target Support Files/Pods-TinderSwipeCardsSwiftTests/Pods-TinderSwipeCardsSwiftTests.release.xcconfig"; sourceTree = "<group>"; };
+		36407FB8A6EB6E956E1A0269 /* Pods-TinderSwipeCardsSwift.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-TinderSwipeCardsSwift.debug.xcconfig"; path = "Pods/Target Support Files/Pods-TinderSwipeCardsSwift/Pods-TinderSwipeCardsSwift.debug.xcconfig"; sourceTree = "<group>"; };
+		36A1EDFB6345CBBF5FA2F8D0 /* Pods-TinderSwipeCardsSwiftTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-TinderSwipeCardsSwiftTests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-TinderSwipeCardsSwiftTests/Pods-TinderSwipeCardsSwiftTests.debug.xcconfig"; sourceTree = "<group>"; };
+		4833A72E3E155389FD512301 /* Pods-TinderSwipeCardsSwift.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-TinderSwipeCardsSwift.release.xcconfig"; path = "Pods/Target Support Files/Pods-TinderSwipeCardsSwift/Pods-TinderSwipeCardsSwift.release.xcconfig"; sourceTree = "<group>"; };
+		A6F904991F9C8ECF5535A3AD /* Pods_TinderSwipeCardsSwift.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_TinderSwipeCardsSwift.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		C712C95CC91146354012CC9B /* Pods_TinderSwipeCardsSwiftTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_TinderSwipeCardsSwiftTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		CC2D00251AF1D31400AF5C5F /* TinderSwipeCardsSwift.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = TinderSwipeCardsSwift.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		CC2D00291AF1D31400AF5C5F /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		CC2D002A1AF1D31400AF5C5F /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
@@ -49,6 +57,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				66342DAB0F92B60A8F2087F8 /* Pods_TinderSwipeCardsSwift.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -56,18 +65,32 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				A7FA65874A5514AFDF674548 /* Pods_TinderSwipeCardsSwiftTests.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		6B9D0022B4E911C1390D0645 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				36407FB8A6EB6E956E1A0269 /* Pods-TinderSwipeCardsSwift.debug.xcconfig */,
+				4833A72E3E155389FD512301 /* Pods-TinderSwipeCardsSwift.release.xcconfig */,
+				36A1EDFB6345CBBF5FA2F8D0 /* Pods-TinderSwipeCardsSwiftTests.debug.xcconfig */,
+				1650F87B1FAE5E02ECE2C27B /* Pods-TinderSwipeCardsSwiftTests.release.xcconfig */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
 		CC2D001C1AF1D31400AF5C5F = {
 			isa = PBXGroup;
 			children = (
 				CC2D00271AF1D31400AF5C5F /* TinderSwipeCardsSwift */,
 				CC2D003D1AF1D31400AF5C5F /* TinderSwipeCardsSwiftTests */,
 				CC2D00261AF1D31400AF5C5F /* Products */,
+				6B9D0022B4E911C1390D0645 /* Pods */,
+				D766EA563E01109C3424F66E /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -121,6 +144,15 @@
 			name = "Supporting Files";
 			sourceTree = "<group>";
 		};
+		D766EA563E01109C3424F66E /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				A6F904991F9C8ECF5535A3AD /* Pods_TinderSwipeCardsSwift.framework */,
+				C712C95CC91146354012CC9B /* Pods_TinderSwipeCardsSwiftTests.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -128,9 +160,12 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = CC2D00441AF1D31400AF5C5F /* Build configuration list for PBXNativeTarget "TinderSwipeCardsSwift" */;
 			buildPhases = (
+				E37EA31A6742D501ABD27DCD /* [CP] Check Pods Manifest.lock */,
 				CC2D00211AF1D31400AF5C5F /* Sources */,
 				CC2D00221AF1D31400AF5C5F /* Frameworks */,
 				CC2D00231AF1D31400AF5C5F /* Resources */,
+				C3166AF36C05A8046BA03A68 /* [CP] Embed Pods Frameworks */,
+				74B05AE7943282A27EE95038 /* [CP] Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -145,9 +180,12 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = CC2D00471AF1D31400AF5C5F /* Build configuration list for PBXNativeTarget "TinderSwipeCardsSwiftTests" */;
 			buildPhases = (
+				D54B11914E0AA2BD5528DB8E /* [CP] Check Pods Manifest.lock */,
 				CC2D00361AF1D31400AF5C5F /* Sources */,
 				CC2D00371AF1D31400AF5C5F /* Frameworks */,
 				CC2D00381AF1D31400AF5C5F /* Resources */,
+				947B3D11B35C596594702207 /* [CP] Embed Pods Frameworks */,
+				79DA5C639554B922C42DA136 /* [CP] Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -217,6 +255,99 @@
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		74B05AE7943282A27EE95038 /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-TinderSwipeCardsSwift/Pods-TinderSwipeCardsSwift-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		79DA5C639554B922C42DA136 /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-TinderSwipeCardsSwiftTests/Pods-TinderSwipeCardsSwiftTests-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		947B3D11B35C596594702207 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-TinderSwipeCardsSwiftTests/Pods-TinderSwipeCardsSwiftTests-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		C3166AF36C05A8046BA03A68 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-TinderSwipeCardsSwift/Pods-TinderSwipeCardsSwift-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		D54B11914E0AA2BD5528DB8E /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [[ $? != 0 ]] ; then\n    cat << EOM\nerror: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\nEOM\n    exit 1\nfi\n";
+			showEnvVarsInLog = 0;
+		};
+		E37EA31A6742D501ABD27DCD /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [[ $? != 0 ]] ; then\n    cat << EOM\nerror: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\nEOM\n    exit 1\nfi\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
 		CC2D00211AF1D31400AF5C5F /* Sources */ = {
@@ -354,6 +485,7 @@
 		};
 		CC2D00451AF1D31400AF5C5F /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 36407FB8A6EB6E956E1A0269 /* Pods-TinderSwipeCardsSwift.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				INFOPLIST_FILE = TinderSwipeCardsSwift/Info.plist;
@@ -364,6 +496,7 @@
 		};
 		CC2D00461AF1D31400AF5C5F /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 4833A72E3E155389FD512301 /* Pods-TinderSwipeCardsSwift.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				INFOPLIST_FILE = TinderSwipeCardsSwift/Info.plist;
@@ -374,6 +507,7 @@
 		};
 		CC2D00481AF1D31400AF5C5F /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 36A1EDFB6345CBBF5FA2F8D0 /* Pods-TinderSwipeCardsSwiftTests.debug.xcconfig */;
 			buildSettings = {
 				BUNDLE_LOADER = "$(TEST_HOST)";
 				FRAMEWORK_SEARCH_PATHS = (
@@ -393,6 +527,7 @@
 		};
 		CC2D00491AF1D31400AF5C5F /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 1650F87B1FAE5E02ECE2C27B /* Pods-TinderSwipeCardsSwiftTests.release.xcconfig */;
 			buildSettings = {
 				BUNDLE_LOADER = "$(TEST_HOST)";
 				FRAMEWORK_SEARCH_PATHS = (

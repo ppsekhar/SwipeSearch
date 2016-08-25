@@ -8,6 +8,7 @@
 
 import Foundation
 import UIKit
+import Firebase
 
 let ACTION_MARGIN: Float = 120      //%%% distance from center where the action applies. Higher = swipe further in order for the action to be called
 let SCALE_STRENGTH: Float = 4       //%%% how quickly the card shrinks. Higher = slower shrinking
@@ -131,6 +132,7 @@ class DraggableView: UIView {
                 self.removeFromSuperview()
         })
         delegate.cardSwipedRight(self)
+        print ("Right Swipe")
     }
 
     func leftAction() -> Void {
@@ -143,6 +145,7 @@ class DraggableView: UIView {
                 self.removeFromSuperview()
         })
         delegate.cardSwipedLeft(self)
+        print ("Left Swipe")
     }
 
     func rightClickAction() -> Void {
