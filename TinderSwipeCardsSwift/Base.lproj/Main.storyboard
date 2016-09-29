@@ -1,8 +1,9 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="10117" systemVersion="15F34" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="BYZ-38-t0r">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="10117" systemVersion="15F34" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="bqF-Vu-DbL">
     <dependencies>
         <deployment identifier="iOS"/>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="10085"/>
+        <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
     </dependencies>
     <scenes>
         <!--View Controller-->
@@ -21,6 +22,64 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
+            <point key="canvasLocation" x="217" y="247"/>
+        </scene>
+        <!--View Controller-->
+        <scene sceneID="EJU-Eh-Ts3">
+            <objects>
+                <viewController id="bqF-Vu-DbL" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="iyh-pl-qeG"/>
+                        <viewControllerLayoutGuide type="bottom" id="ofl-08-Nbj"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="laG-W8-1zm">
+                        <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <button opaque="NO" contentMode="scaleToFill" ambiguous="YES" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="2ca-ud-0ot">
+                                <rect key="frame" x="20" y="208" width="560" height="30"/>
+                                <state key="normal" title="Login User"/>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" ambiguous="YES" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="lPH-ze-bOS">
+                                <rect key="frame" x="20" y="251" width="560" height="30"/>
+                                <state key="normal" title="Login Company"/>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" ambiguous="YES" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Pk9-uZ-Abt">
+                                <rect key="frame" x="20" y="289" width="560" height="30"/>
+                                <state key="normal" title="Register"/>
+                                <connections>
+                                    <segue destination="BYZ-38-t0r" kind="show" id="qxA-Mk-uWi"/>
+                                </connections>
+                            </button>
+                            <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" ambiguous="YES" misplaced="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Email" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="zqv-eJ-KfO">
+                                <rect key="frame" x="20" y="91" width="560" height="30"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits" keyboardType="emailAddress"/>
+                            </textField>
+                            <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" ambiguous="YES" misplaced="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Password" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="pe9-2a-x9A">
+                                <rect key="frame" x="20" y="135" width="560" height="30"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits" keyboardType="emailAddress"/>
+                            </textField>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="Pk9-uZ-Abt" firstAttribute="leading" secondItem="laG-W8-1zm" secondAttribute="leadingMargin" id="K7o-Mk-am6"/>
+                            <constraint firstItem="Pk9-uZ-Abt" firstAttribute="trailing" secondItem="laG-W8-1zm" secondAttribute="trailingMargin" id="Thm-Tu-qDe"/>
+                            <constraint firstItem="pe9-2a-x9A" firstAttribute="leading" secondItem="laG-W8-1zm" secondAttribute="leadingMargin" id="ggL-Jm-ze9"/>
+                            <constraint firstItem="pe9-2a-x9A" firstAttribute="trailing" secondItem="laG-W8-1zm" secondAttribute="trailingMargin" id="jkU-iT-XCg"/>
+                            <constraint firstItem="zqv-eJ-KfO" firstAttribute="trailing" secondItem="laG-W8-1zm" secondAttribute="trailingMargin" id="kkz-Br-d23"/>
+                            <constraint firstItem="zqv-eJ-KfO" firstAttribute="leading" secondItem="laG-W8-1zm" secondAttribute="leadingMargin" id="lB3-ZN-0rH"/>
+                            <constraint firstItem="lPH-ze-bOS" firstAttribute="leading" secondItem="laG-W8-1zm" secondAttribute="leadingMargin" id="tiF-yM-ODn"/>
+                            <constraint firstItem="2ca-ud-0ot" firstAttribute="leading" secondItem="laG-W8-1zm" secondAttribute="leadingMargin" id="ul8-Aq-QlB"/>
+                            <constraint firstItem="lPH-ze-bOS" firstAttribute="trailing" secondItem="laG-W8-1zm" secondAttribute="trailingMargin" id="xad-EL-d0X"/>
+                            <constraint firstItem="2ca-ud-0ot" firstAttribute="trailing" secondItem="laG-W8-1zm" secondAttribute="trailingMargin" id="xzq-qZ-hh6"/>
+                        </constraints>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="TOp-8p-vfG" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-475" y="247"/>
         </scene>
     </scenes>
 </document>

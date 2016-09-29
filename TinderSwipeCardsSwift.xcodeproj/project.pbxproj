@@ -7,8 +7,6 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		66342DAB0F92B60A8F2087F8 /* Pods_TinderSwipeCardsSwift.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A6F904991F9C8ECF5535A3AD /* Pods_TinderSwipeCardsSwift.framework */; };
-		A7FA65874A5514AFDF674548 /* Pods_TinderSwipeCardsSwiftTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C712C95CC91146354012CC9B /* Pods_TinderSwipeCardsSwiftTests.framework */; };
 		CC2D002B1AF1D31400AF5C5F /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = CC2D002A1AF1D31400AF5C5F /* AppDelegate.swift */; };
 		CC2D002D1AF1D31400AF5C5F /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CC2D002C1AF1D31400AF5C5F /* ViewController.swift */; };
 		CC2D00301AF1D31400AF5C5F /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = CC2D002E1AF1D31400AF5C5F /* Main.storyboard */; };
@@ -35,8 +33,6 @@
 		36407FB8A6EB6E956E1A0269 /* Pods-TinderSwipeCardsSwift.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-TinderSwipeCardsSwift.debug.xcconfig"; path = "Pods/Target Support Files/Pods-TinderSwipeCardsSwift/Pods-TinderSwipeCardsSwift.debug.xcconfig"; sourceTree = "<group>"; };
 		36A1EDFB6345CBBF5FA2F8D0 /* Pods-TinderSwipeCardsSwiftTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-TinderSwipeCardsSwiftTests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-TinderSwipeCardsSwiftTests/Pods-TinderSwipeCardsSwiftTests.debug.xcconfig"; sourceTree = "<group>"; };
 		4833A72E3E155389FD512301 /* Pods-TinderSwipeCardsSwift.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-TinderSwipeCardsSwift.release.xcconfig"; path = "Pods/Target Support Files/Pods-TinderSwipeCardsSwift/Pods-TinderSwipeCardsSwift.release.xcconfig"; sourceTree = "<group>"; };
-		A6F904991F9C8ECF5535A3AD /* Pods_TinderSwipeCardsSwift.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_TinderSwipeCardsSwift.framework; sourceTree = BUILT_PRODUCTS_DIR; };
-		C712C95CC91146354012CC9B /* Pods_TinderSwipeCardsSwiftTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_TinderSwipeCardsSwiftTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		CC2D00251AF1D31400AF5C5F /* TinderSwipeCardsSwift.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = TinderSwipeCardsSwift.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		CC2D00291AF1D31400AF5C5F /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		CC2D002A1AF1D31400AF5C5F /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
@@ -57,7 +53,6 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				66342DAB0F92B60A8F2087F8 /* Pods_TinderSwipeCardsSwift.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -65,7 +60,6 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				A7FA65874A5514AFDF674548 /* Pods_TinderSwipeCardsSwiftTests.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -147,8 +141,6 @@
 		D766EA563E01109C3424F66E /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
-				A6F904991F9C8ECF5535A3AD /* Pods_TinderSwipeCardsSwift.framework */,
-				C712C95CC91146354012CC9B /* Pods_TinderSwipeCardsSwiftTests.framework */,
 			);
 			name = Frameworks;
 			sourceTree = "<group>";
