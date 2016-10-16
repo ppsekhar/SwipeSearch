@@ -8,6 +8,7 @@
 
 /* Begin PBXBuildFile section */
 		82AA20491D9C9648008D66F8 /* LoginViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 82AA20481D9C9648008D66F8 /* LoginViewController.swift */; };
+		82AA204B1DB34786008D66F8 /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 82AA204A1DB34786008D66F8 /* GoogleService-Info.plist */; };
 		CC2D002B1AF1D31400AF5C5F /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = CC2D002A1AF1D31400AF5C5F /* AppDelegate.swift */; };
 		CC2D002D1AF1D31400AF5C5F /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CC2D002C1AF1D31400AF5C5F /* ViewController.swift */; };
 		CC2D00301AF1D31400AF5C5F /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = CC2D002E1AF1D31400AF5C5F /* Main.storyboard */; };
@@ -35,6 +36,7 @@
 		36A1EDFB6345CBBF5FA2F8D0 /* Pods-TinderSwipeCardsSwiftTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-TinderSwipeCardsSwiftTests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-TinderSwipeCardsSwiftTests/Pods-TinderSwipeCardsSwiftTests.debug.xcconfig"; sourceTree = "<group>"; };
 		4833A72E3E155389FD512301 /* Pods-TinderSwipeCardsSwift.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-TinderSwipeCardsSwift.release.xcconfig"; path = "Pods/Target Support Files/Pods-TinderSwipeCardsSwift/Pods-TinderSwipeCardsSwift.release.xcconfig"; sourceTree = "<group>"; };
 		82AA20481D9C9648008D66F8 /* LoginViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LoginViewController.swift; sourceTree = "<group>"; };
+		82AA204A1DB34786008D66F8 /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; name = "GoogleService-Info.plist"; path = "../../../../Downloads/GoogleService-Info.plist"; sourceTree = "<group>"; };
 		CC2D00251AF1D31400AF5C5F /* TinderSwipeCardsSwift.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = TinderSwipeCardsSwift.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		CC2D00291AF1D31400AF5C5F /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		CC2D002A1AF1D31400AF5C5F /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
@@ -102,6 +104,7 @@
 		CC2D00271AF1D31400AF5C5F /* TinderSwipeCardsSwift */ = {
 			isa = PBXGroup;
 			children = (
+				82AA204A1DB34786008D66F8 /* GoogleService-Info.plist */,
 				CC2D002A1AF1D31400AF5C5F /* AppDelegate.swift */,
 				CC2D002C1AF1D31400AF5C5F /* ViewController.swift */,
 				CC2D004E1AF2107800AF5C5F /* DraggableViewBackground.swift */,
@@ -237,6 +240,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				CC2D00301AF1D31400AF5C5F /* Main.storyboard in Resources */,
+				82AA204B1DB34786008D66F8 /* GoogleService-Info.plist in Resources */,
 				CC2D00351AF1D31400AF5C5F /* LaunchScreen.xib in Resources */,
 				CC2D00321AF1D31400AF5C5F /* Images.xcassets in Resources */,
 			);

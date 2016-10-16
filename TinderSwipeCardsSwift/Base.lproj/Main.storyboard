@@ -36,11 +36,11 @@
                         <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="k97-yY-DKh">
-                                <rect key="frame" x="20" y="291" width="560" height="30"/>
-                                <state key="normal" title="Register"/>
+                            <button opaque="NO" contentMode="scaleToFill" ambiguous="YES" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="v6z-H3-zw6">
+                                <rect key="frame" x="20" y="329" width="560" height="30"/>
+                                <state key="normal" title="Login"/>
                                 <connections>
-                                    <segue destination="BYZ-38-t0r" kind="show" id="JAc-6H-7FH"/>
+                                    <segue destination="BYZ-38-t0r" kind="show" id="Jmk-lR-mkB"/>
                                 </connections>
                             </button>
                             <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Email" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="egr-gP-MxK">
@@ -53,16 +53,35 @@
                                 <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                 <textInputTraits key="textInputTraits"/>
                             </textField>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" ambiguous="YES" misplaced="YES" text="Username" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="aGV-yG-t0E">
+                                <rect key="frame" x="20" y="83" width="560" height="21"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="k97-yY-DKh">
+                                <rect key="frame" x="20" y="291" width="560" height="30"/>
+                                <state key="normal" title="Create Account"/>
+                                <connections>
+                                    <action selector="createAccountAction:" destination="tRC-gf-DTB" eventType="touchUpInside" id="ij6-CG-Dr7"/>
+                                </connections>
+                            </button>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                         <constraints>
                             <constraint firstItem="k97-yY-DKh" firstAttribute="leading" secondItem="Haq-lB-Mdm" secondAttribute="leadingMargin" id="4y3-lR-8uD"/>
                             <constraint firstItem="egr-gP-MxK" firstAttribute="leading" secondItem="Haq-lB-Mdm" secondAttribute="leadingMargin" id="5Vl-h1-WcD"/>
                             <constraint firstItem="gfN-dl-Hdt" firstAttribute="top" secondItem="egr-gP-MxK" secondAttribute="bottom" constant="22" id="EJ4-Q8-ec6"/>
+                            <constraint firstItem="aGV-yG-t0E" firstAttribute="leading" secondItem="Haq-lB-Mdm" secondAttribute="leadingMargin" id="OJ3-Ba-GaX"/>
                             <constraint firstItem="gfN-dl-Hdt" firstAttribute="trailing" secondItem="Haq-lB-Mdm" secondAttribute="trailingMargin" id="OaR-2L-uoL"/>
+                            <constraint firstItem="v6z-H3-zw6" firstAttribute="trailing" secondItem="Haq-lB-Mdm" secondAttribute="trailingMargin" id="Sf9-Rr-4Tn"/>
+                            <constraint firstItem="v6z-H3-zw6" firstAttribute="leading" secondItem="Haq-lB-Mdm" secondAttribute="leadingMargin" id="UBM-UX-gv5"/>
                             <constraint firstItem="k97-yY-DKh" firstAttribute="top" secondItem="gfN-dl-Hdt" secondAttribute="bottom" constant="72" id="Vcm-e1-ut9"/>
+                            <constraint firstItem="aGV-yG-t0E" firstAttribute="trailing" secondItem="Haq-lB-Mdm" secondAttribute="trailingMargin" id="b8L-Ug-1Nm"/>
                             <constraint firstItem="gfN-dl-Hdt" firstAttribute="leading" secondItem="Haq-lB-Mdm" secondAttribute="leadingMargin" id="blF-5m-gmf"/>
+                            <constraint firstItem="k97-yY-DKh" firstAttribute="leading" secondItem="Haq-lB-Mdm" secondAttribute="leadingMargin" id="cJR-ci-ZNk"/>
                             <constraint firstItem="egr-gP-MxK" firstAttribute="trailing" secondItem="Haq-lB-Mdm" secondAttribute="trailingMargin" id="el7-pQ-3E5"/>
+                            <constraint firstItem="k97-yY-DKh" firstAttribute="trailing" secondItem="Haq-lB-Mdm" secondAttribute="trailingMargin" id="hAR-YH-qGh"/>
                             <constraint firstItem="k97-yY-DKh" firstAttribute="trailing" secondItem="Haq-lB-Mdm" secondAttribute="trailingMargin" id="nRc-ok-SMJ"/>
                             <constraint firstItem="egr-gP-MxK" firstAttribute="top" secondItem="teA-fE-Wid" secondAttribute="bottom" constant="117" id="thu-Lj-XQj"/>
                         </constraints>
@@ -70,6 +89,7 @@
                     <connections>
                         <outlet property="emailText" destination="egr-gP-MxK" id="22F-GX-lO4"/>
                         <outlet property="passwordText" destination="gfN-dl-Hdt" id="mHD-6j-9rg"/>
+                        <outlet property="usernameLabel" destination="aGV-yG-t0E" id="6hU-G6-E2y"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="uT7-rf-JvJ" userLabel="First Responder" sceneMemberID="firstResponder"/>
